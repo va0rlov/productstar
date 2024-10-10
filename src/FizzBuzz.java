@@ -45,19 +45,13 @@ public class FizzBuzz {
 
         // Цикл для перебора чисел от 0 до n
         for (int i = 0; i <= n; i++) {
-            // Используем методы класса Number для определения вывода
-            if (i == 0) {
-                System.out.print(i);
-            } else if (Number.isDivisibleBy3And5(i)) {
-                System.out.print("fizzbuzz");
-            } else if (Number.isDivisibleBy3(i)) {
-                System.out.print("fizz");
-            } else if (Number.isDivisibleBy5(i)) {
-                System.out.print("buzz");
-            } else {
-                System.out.print(i);
-            }
-            System.out.print(" ");
+            // Используем тернарный оператор для определения вывода
+            String output = (i == 0) ? String.valueOf(i) :
+                    (Number.isDivisibleBy3And5(i)) ? "fizzbuzz" :
+                            (Number.isDivisibleBy3(i)) ? "fizz" :
+                                    (Number.isDivisibleBy5(i)) ? "buzz" :
+                                            String.valueOf(i);
+            System.out.print(output + " ");
         }
     }
 }
