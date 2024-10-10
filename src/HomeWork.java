@@ -1,58 +1,84 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Класс HomeWork представляет собой простую программу, которая запрашивает у пользователя информацию о его друге,
+ * включая имя и возраст, и позволяет повторить процесс по желанию пользователя.
+ */
 public class HomeWork {
+
+    /**
+     * Точка входа в программу.
+     *
+     * @param args Аргументы командной строки (не используются в данной программе).
+     */
     public static void main(String[] args) {
-        final int MIN_AGE = 1;
-        final int MAX_AGE = 123;
+        final int MIN_AGE = 1;  // Минимальный возраст, который может быть у друга
+        final int MAX_AGE = 123;  // Максимальный возраст, который может быть у друга
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);  // Создаем объект Scanner для чтения ввода пользователя
 
-        int choice = 1; // Объявляем переменную choice вне цикла
+        int choice = 1;  // Объявляем переменную choice вне цикла, чтобы она была доступна в условии цикла do-while
+
+        // Основной цикл программы, который будет выполняться до тех пор, пока пользователь не решит завершить программу
         do {
             System.out.println("Расскажите о вашем друге");
             System.out.print("Как зовут вашего друга: ");
-            String name = scanner.nextLine();
+            String name = scanner.nextLine();  // Считываем имя друга
+
+            // Проверяем, что имя не является пустой строкой или null
             if (name == null || name.isEmpty()) {
                 System.out.println("Нужно ввести имя.");
-                continue;
+                continue;  // Пропускаем оставшуюся часть цикла и начинаем сначала
             }
 
-            int age = 0;
-            boolean isValidAge = false;
+            int age = 0;  // Инициализируем переменную для хранения возраста
+            boolean isValidAge = false;  // Флаг, указывающий, что возраст введен корректно
+
+            // Цикл для ввода и проверки возраста
             do {
                 try {
                     System.out.print("Сколько лет вашему другу: ");
-                    age = scanner.nextInt();
-                    scanner.nextLine(); // Очистить ввод
+                    age = scanner.nextInt();  // Считываем возраст
+                    scanner.nextLine();  // Очищаем буфер ввода от новой строки
+
+                    // Проверяем, что возраст находится в допустимом диапазоне
                     if (age < MIN_AGE || age > MAX_AGE) {
                         System.out.println("Нужно число от " + MIN_AGE + " до " + MAX_AGE + ".");
                     } else {
-                        isValidAge = true;
+                        isValidAge = true;  // Устанавливаем флаг, что возраст введен корректно
                     }
                 } catch (InputMismatchException e) {
+                    // Обрабатываем исключение, если введено не число
                     System.out.println("Нужно число от " + MIN_AGE + " до " + MAX_AGE + ".");
-                    scanner.next(); // Очистить ввод
+                    scanner.next();  // Очищаем буфер ввода от некорректного значения
                 }
-            } while (!isValidAge);
+            } while (!isValidAge);  // Повторяем цикл, пока возраст не будет введен корректно
 
+            // Выводим информацию о друге
             System.out.println("Моему другу по имени '" + name + "' сейчас полных лет: " + age + ".");
 
+            // Цикл для запроса повторного запуска программы
             do {
                 System.out.print("Хотите запустить программу заново? (0 - окончание, 1 - заново): ");
                 try {
-                    choice = scanner.nextInt();
-                    scanner.nextLine(); // Очистить ввод
+                    choice = scanner.nextInt();  // Считываем выбор пользователя
+                    scanner.nextLine();  // Очищаем буфер ввода
+
+                    // Проверяем, что введено корректное значение (0 или 1)
                     if (choice != 0 && choice != 1) {
                         System.out.println("Нужно ввести 0 или 1.");
                     }
                 } catch (InputMismatchException e) {
+                    // Обрабатываем исключение, если введено не число
                     System.out.println("Нужно ввести 0 или 1.");
-                    scanner.next(); // Очистить ввод
-                    choice = -1;
+                    scanner.next();  // Очищаем буфер ввода
+                    choice = -1;  // Устанавливаем значение choice, чтобы цикл продолжился
                 }
-            } while (choice != 0 && choice != 1);
-        } while (choice == 1);
-        scanner.close();
+            } while (choice != 0 && choice != 1);  // Повторяем цикл, пока не будет введено корректное значение
+
+        } while (choice == 1);  // Повторяем основной цикл, если пользователь выбрал "заново"
+
+        scanner.close();  // Закрываем Scanner для освобождения ресурсов
     }
 }
