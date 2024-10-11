@@ -74,7 +74,7 @@ public class Sort {
             System.out.println("[]");
             return;
         }
-        StringBuilder sb = new StringBuilder("[");
+        StringBuilder sb = new StringBuilder("[ ");
         for (int i = 0; i < currentSize; i++) {
             if (i > 0) {
                 sb.append(" ");
