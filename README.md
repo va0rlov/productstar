@@ -6,5 +6,5 @@
 5) Структуры данных https://github.com/va0rlov/productstar/tree/Sort
 
 JAVA: КЛАССЫ, ОБЪЕКТЫ, ПЕРВАЯ ПРОГРАММА
-1) Классы и объекты: начальный уровень
+1) Классы и объекты: начальный уровень https://github.com/va0rlov/productstar/tree/Person/PI && https://github.com/va0rlov/productstar/tree/Person/PII
 2) Классы и объекты: продвинутый уровень
