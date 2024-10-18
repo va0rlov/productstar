@@ -9,4 +9,4 @@ JAVA: КЛАССЫ, ОБЪЕКТЫ, ПЕРВАЯ ПРОГРАММА
 1) Классы и объекты: начальный уровень
    * https://github.com/va0rlov/productstar/tree/Person/PI
    * https://github.com/va0rlov/productstar/tree/Person/PII
-3) Классы и объекты: продвинутый уровень
+3) Классы и объекты: продвинутый уровень https://github.com/va0rlov/productstar/tree/Car
