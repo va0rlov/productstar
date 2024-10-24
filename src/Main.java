@@ -1,15 +1,24 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// src/Main.java
+
+import Constants.Constants;
+import StringRegex.CountEInWords;
+import StringRegex.PhoneValidator;
+import StringRegex.TextCleaner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Hello and welcome!");
+        // Задание 1: Посчитать количество букв 'е' в каждом слове
+        System.out.println("Задание 1:");
+        CountEInWords.countEInWords(Constants.TEXT);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Задание 2: Проверка телефона в международном формате
+        System.out.println("\nЗадание 2:");
+        System.out.println("Телефон " + Constants.VALID_PHONE_NUMBER + " валиден: " + PhoneValidator.isValidPhoneNumber(Constants.VALID_PHONE_NUMBER));
+        System.out.println("Телефон " + Constants.INVALID_PHONE_NUMBER + " валиден: " + PhoneValidator.isValidPhoneNumber(Constants.INVALID_PHONE_NUMBER));
+
+        // Задание 3: Удаление всех букв и пробелов из текста
+        System.out.println("\nЗадание 3:");
+        String result = TextCleaner.removeLettersAndSpaces(Constants.TEXT);
+        System.out.println("Результирующая строка: " + result);
     }
 }
