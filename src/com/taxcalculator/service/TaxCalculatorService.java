@@ -33,7 +33,7 @@ public class TaxCalculatorService {
         Map<Integer, Double> taxMap = new HashMap<>();
 
         for (String priceStr : prices) {
-            // Проверка на соответствие регулярному выражению
+            // Проверка на соответствие регулярному выражению, в том числе текст и отрицательные значения
             if (!priceStr.matches("\\d+(\\.\\d+)?")) {
                 System.out.println("Неверный формат цены: " + priceStr);
                 continue;

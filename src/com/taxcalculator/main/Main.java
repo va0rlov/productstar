@@ -16,7 +16,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // Пример входных данных
-        String[] prices = {"50", "150", "500", "1500", "5000", "15000", "20000"};
+        String[] prices = {"50", "150", "500", "1500", "5000", "15000", "20000", "-10", "text", "0a1b3c"};
 
         // Создание сервиса для расчета налога
         TaxCalculatorService taxCalculatorService = new TaxCalculatorService();
