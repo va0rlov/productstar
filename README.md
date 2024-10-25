@@ -13,6 +13,6 @@ JAVA: КЛАССЫ, ОБЪЕКТЫ, ПЕРВАЯ ПРОГРАММА
 4) Методы и поля классов https://github.com/va0rlov/productstar/tree/Circle
 5) Обработка исключений https://github.com/va0rlov/productstar/tree/Banking
 6) Работа с массивами 
-7) Строки и регулярные выражения
+7) Строки и регулярные выражения https://github.com/va0rlov/productstar/tree/StringsRegex
 8) Первая программа на Java и ее тестирование
 9) Бонусный урок. Дополнительная практика.
