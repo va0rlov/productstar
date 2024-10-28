@@ -17,7 +17,7 @@ JAVA: КЛАССЫ, ОБЪЕКТЫ, ПЕРВАЯ ПРОГРАММА
 8) Первая программа на Java и ее тестирование https://github.com/va0rlov/productstar/tree/Tax
 9) Бонусный урок. Дополнительная практика.
 
-Linux
+LINUX
 1) Основы Linux
 2) Основы работы с Linux
 
