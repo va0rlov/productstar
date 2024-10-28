@@ -14,5 +14,20 @@ JAVA: КЛАССЫ, ОБЪЕКТЫ, ПЕРВАЯ ПРОГРАММА
 5) Обработка исключений https://github.com/va0rlov/productstar/tree/Banking
 6) Работа с массивами https://github.com/va0rlov/arrays-homework-fork/tree/dev
 7) Строки и регулярные выражения https://github.com/va0rlov/productstar/tree/StringsRegex
-8) Первая программа на Java и ее тестирование
+8) Первая программа на Java и ее тестирование https://github.com/va0rlov/productstar/tree/Tax
 9) Бонусный урок. Дополнительная практика.
+
+Linux
+1) Основы Linux
+2) Основы работы с Linux
+
+JAVA CORE: КОЛЛЕКЦИИ, ПОТОКИ, УПРАВЛЕНИЕ ПАМЯТЬЮ
+1) Знакомство с алгоритмами
+2) Обзор коллекций в Java
+3) Коллекции: ArrayList и LinkedList
+4) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet
+5) Коллекции: TreeMap, TreeSet
+6) Stream api, lambda, optional
+7) Практический проект по работе с коллекциями
+8) Generic-типы. Runtime, wildcards & PECS
+9) Работа с памятью JVM
