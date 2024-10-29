@@ -22,7 +22,7 @@ LINUX
 2) Основы работы с Linux
 
 JAVA CORE: КОЛЛЕКЦИИ, ПОТОКИ, УПРАВЛЕНИЕ ПАМЯТЬЮ
-1) Знакомство с алгоритмами
+1) Знакомство с алгоритмами https://github.com/va0rlov/productstar/tree/Algorithm
 2) Обзор коллекций в Java
 3) Коллекции: ArrayList и LinkedList
 4) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet
