@@ -24,10 +24,13 @@ LINUX
 JAVA CORE: КОЛЛЕКЦИИ, ПОТОКИ, УПРАВЛЕНИЕ ПАМЯТЬЮ
 1) Знакомство с алгоритмами https://github.com/va0rlov/productstar/tree/Algorithm
 2) Обзор коллекций в Java
-3) Коллекции: ArrayList и LinkedList
-4) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet
-5) Коллекции: TreeMap, TreeSet
-6) Stream api, lambda, optional
-7) Практический проект по работе с коллекциями
-8) Generic-типы. Runtime, wildcards & PECS
-9) Работа с памятью JVM
+   * https://github.com/va0rlov/productstar/tree/Collections/P1
+   * https://github.com/va0rlov/productstar/tree/Collections/P2
+   * https://github.com/va0rlov/productstar/tree/Collections/P3
+4) Коллекции: ArrayList и LinkedList https://github.com/va0rlov/productstar/tree/RollingAverage
+5) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet
+6) Коллекции: TreeMap, TreeSet
+7) Stream api, lambda, optional
+8) Практический проект по работе с коллекциями
+9) Generic-типы. Runtime, wildcards & PECS
+10) Работа с памятью JVM
