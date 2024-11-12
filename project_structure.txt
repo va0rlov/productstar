@@ -13,7 +13,12 @@
 │   │   │   ├── 📁 example/
 │   │   │   │   ├── 📁 students/
 │   │   │   │   │   ├── 📄 Examination.java
+│   │   │   │   │   ├── 📁 exceptions/
+│   │   │   │   │   │   ├── 📄 ItemNotFoundException.java
+│   │   │   │   │   ├── 📄 LRUCache.java
+│   │   │   │   │   ├── 📄 NameAndSubject.java
 │   │   │   │   │   ├── 📄 Score.java
+│   │   │   │   │   ├── 📄 StudentsExamination.java
 │   │   ├── 📄 ProjectStructureWriter.java
 │   ├── 📁 resources/
 ├── 📁 test/
@@ -21,4 +26,4 @@
 │   │   ├── 📁 org/
 │   │   │   ├── 📁 example/
 │   │   │   │   ├── 📁 students/
-│   │   │   │   │   ├── 📄 ExaminationTest.java
+│   │   │   │   │   ├── 📄 StudentsExaminationTest.java
