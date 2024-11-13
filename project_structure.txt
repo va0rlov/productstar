@@ -1,0 +1,10 @@
+📄 pom.xml
+📄 productstar.iml
+📄 README.md
+📁 src/
+├── 📁 main/
+│   ├── 📁 java/
+│   │   ├── 📄 Main.java
+│   │   ├── 📄 ProjectStructureWriter.java
+│   │   ├── 📄 ResultsBoard.java
+│   │   ├── 📄 StudentScore.java
