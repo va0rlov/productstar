@@ -1,4 +1,4 @@
-ОСНОВЫ JAVA
+ОСНОВЫ JAVA 
 1) Знакомство с языком Java и инструментами
 2) Базовый синтаксис Java https://github.com/va0rlov/productstar/tree/HomeWork
 3) Переменные и типы данных в Java https://github.com/va0rlov/productstar/tree/Friend
@@ -7,8 +7,8 @@
 
 JAVA: КЛАССЫ, ОБЪЕКТЫ, ПЕРВАЯ ПРОГРАММА
 1) Классы и объекты: начальный уровень
-  * https://github.com/va0rlov/productstar/tree/Person/PI
-  * https://github.com/va0rlov/productstar/tree/Person/PII
+   * https://github.com/va0rlov/productstar/tree/Person/PI
+   * https://github.com/va0rlov/productstar/tree/Person/PII
 3) Классы и объекты: продвинутый уровень https://github.com/va0rlov/productstar/tree/Car
 4) Методы и поля классов https://github.com/va0rlov/productstar/tree/Circle
 5) Обработка исключений https://github.com/va0rlov/productstar/tree/Banking
@@ -24,9 +24,9 @@ LINUX
 JAVA CORE: КОЛЛЕКЦИИ, ПОТОКИ, УПРАВЛЕНИЕ ПАМЯТЬЮ
 1) Знакомство с алгоритмами https://github.com/va0rlov/productstar/tree/Algorithm
 2) Обзор коллекций в Java
-  * https://github.com/va0rlov/productstar/tree/Collections/P1
-  * https://github.com/va0rlov/productstar/tree/Collections/P2
-  * https://github.com/va0rlov/productstar/tree/Collections/P3
+   * https://github.com/va0rlov/productstar/tree/Collections/P1
+   * https://github.com/va0rlov/productstar/tree/Collections/P2
+   * https://github.com/va0rlov/productstar/tree/Collections/P3
 4) Коллекции: ArrayList и LinkedList https://github.com/va0rlov/productstar/tree/RollingAverage
 5) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet
 6) Коллекции: TreeMap, TreeSet
