@@ -1,7 +1,7 @@
 package resultsboard.datainitializer;
 
 import org.junit.jupiter.api.Test;
-import resultsboard.ResultsBoard;
+import resultsboard.resultboard.ResultsBoard;
 import resultsboard.StudentScore;
 
 import java.util.List;
