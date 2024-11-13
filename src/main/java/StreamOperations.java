@@ -66,7 +66,7 @@ public class StreamOperations {
                 .sorted((a, b) -> b - a)
                 // Skip the first element (the largest number)
                 .skip(1)
-                // Find the first element in the remaining list (the second largest number)
+                // Find the first element in the remaining list (the second-largest number)
                 .findFirst();
     }
 
