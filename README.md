@@ -28,8 +28,8 @@ JAVA CORE: КОЛЛЕКЦИИ, ПОТОКИ, УПРАВЛЕНИЕ ПАМЯТЬЮ
    * https://github.com/va0rlov/productstar/tree/Collections/P2
    * https://github.com/va0rlov/productstar/tree/Collections/P3
 4) Коллекции: ArrayList и LinkedList https://github.com/va0rlov/productstar/tree/RollingAverage
-5) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet
-6) Коллекции: TreeMap, TreeSet
+5) Коллекции: HashMap, HashSet, LinkedHashMap, LinkedHashSet https://github.com/va0rlov/productstar/tree/StudentsHash
+6) Коллекции: TreeMap, TreeSet https://github.com/va0rlov/productstar/tree/ResultsBoard
 7) Stream api, lambda, optional
 8) Практический проект по работе с коллекциями
 9) Generic-типы. Runtime, wildcards & PECS
