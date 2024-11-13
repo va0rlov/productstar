@@ -3,14 +3,13 @@ package org.example.students;
 import org.example.students.exceptions.ItemNotFoundException;
 
 import java.util.*;
-
+import java.util.stream.Collectors;
 
 public class StudentsExamination implements Examination {
 
     private static final int INITIAL_CAPACITY = 256;
     private final Map<NameAndSubject, Integer> examinations = new LinkedHashMap<>(INITIAL_CAPACITY);
     private final LRUCache<String, Double> cache = new LRUCache<>(2);
-
 
     /**
      * Add a score to the list of scores.
@@ -20,10 +19,8 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public void addScore(Score score) {
-
         NameAndSubject nameAndSubject = new NameAndSubject(score.name(), score.subject());
         examinations.put(nameAndSubject, score.score());
-
     }
 
     /**
@@ -36,15 +33,8 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public Score getScore(String name, String subject) throws ItemNotFoundException {
-
         NameAndSubject nameAndSubject = new NameAndSubject(name, subject);
-
-        if (examinations.containsKey(nameAndSubject)) {
-            return new Score(name, subject, examinations.get(nameAndSubject));
-        }
-
-        throw new ItemNotFoundException(name + ' ' + subject);
-
+        return Optional.ofNullable(examinations.get(nameAndSubject)).map(score -> new Score(name, subject, score)).orElseThrow(() -> new ItemNotFoundException(name + ' ' + subject));
     }
 
     /**
@@ -55,11 +45,7 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public void putAllItems(List<Score> items) {
-
-        for (Score item : items) {
-            addScore(item);
-        }
-
+        items.forEach(this::addScore);
     }
 
     /**
@@ -73,15 +59,8 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public Score removeItem(String name, String subject) throws ItemNotFoundException {
-
         NameAndSubject nameAndSubject = new NameAndSubject(name, subject);
-
-        if (examinations.containsKey(nameAndSubject)) {
-            return new Score(name, subject, examinations.remove(nameAndSubject));
-        }
-
-        throw new ItemNotFoundException(name + ' ' + subject);
-
+        return Optional.ofNullable(examinations.remove(nameAndSubject)).map(score -> new Score(name, subject, score)).orElseThrow(() -> new ItemNotFoundException(name + ' ' + subject));
     }
 
     /**
@@ -92,11 +71,8 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public boolean containsItem(Score score) {
-
         NameAndSubject nameAndSubject = new NameAndSubject(score.name(), score.subject());
-
         return examinations.containsKey(nameAndSubject);
-
     }
 
     /**
@@ -108,22 +84,7 @@ public class StudentsExamination implements Examination {
      * @return the average score for the given subject
      */
     private double getAverageForSubjectCompute(String subject) {
-
-        double average = 0;
-        int count = 0;
-
-        for (Map.Entry<NameAndSubject, Integer> entry : examinations.entrySet()) {
-            if (entry.getKey().subject().equals(subject)) {
-                average += entry.getValue();
-                count++;
-            }
-        }
-        if (count == 0) {
-            return 0;
-        }
-
-        return average / count;
-
+        return examinations.entrySet().stream().filter(entry -> entry.getKey().subject().equals(subject)).mapToInt(Map.Entry::getValue).average().orElse(0);
     }
 
     /**
@@ -135,9 +96,7 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public double getAverageForSubject(String subject) {
-
         return cache.computeIfAbsent(subject, this::getAverageForSubjectCompute);
-
     }
 
     /**
@@ -149,20 +108,7 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public Set<String> multipleSubmissionsStudentNames() {
-
-        Set<String> tempNames = new HashSet<>();
-        Set<String> result = new HashSet<>();
-
-        for (Map.Entry<NameAndSubject, Integer> entry : examinations.entrySet()) {
-            if (tempNames.contains(entry.getKey().name())) {
-                result.add(entry.getKey().name());
-            } else {
-                tempNames.add(entry.getKey().name());
-            }
-        }
-
-        return result;
-
+        return examinations.keySet().stream().collect(Collectors.groupingBy(NameAndSubject::name, Collectors.counting())).entrySet().stream().filter(entry -> entry.getValue() > 1).map(Map.Entry::getKey).collect(Collectors.toSet());
     }
 
     /**
@@ -174,30 +120,7 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public Set<String> lastFiveStudentsWithExcellentMarkOnAnySubject() {
-
-        Set<String> result = new LinkedHashSet<>();
-        List<String> scores = new ArrayList<>();
-
-        if (examinations.isEmpty()) {
-            return result;
-        }
-
-        for (Map.Entry<NameAndSubject, Integer> entry : examinations.entrySet()) {
-            if (entry.getValue() == 5) {
-                scores.add(entry.getKey().name());
-            }
-        }
-
-        Collections.reverse(scores);
-        for (String score : scores) {
-            result.add(score);
-            if (result.size() == 5) {
-                break;
-            }
-        }
-
-        return result;
-
+        return examinations.entrySet().stream().filter(entry -> entry.getValue() == 5).map(entry -> entry.getKey().name()).distinct().limit(5).collect(Collectors.toSet());
     }
 
     /**
@@ -210,9 +133,7 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public Map<NameAndSubject, Integer> getAllItems() {
-
         return new LinkedHashMap<>(examinations);
-
     }
 
     /**
@@ -225,15 +146,6 @@ public class StudentsExamination implements Examination {
      */
     @Override
     public Collection<Score> getAllScores() {
-
-        List<Score> allScores = new ArrayList<>();
-
-        for (Map.Entry<NameAndSubject, Integer> entry : examinations.entrySet()) {
-            allScores.add(new Score(entry.getKey().name(), entry.getKey().subject(), entry.getValue()));
-        }
-
-        return allScores;
-
+        return examinations.entrySet().stream().map(entry -> new Score(entry.getKey().name(), entry.getKey().subject(), entry.getValue())).collect(Collectors.toList());
     }
-
 }

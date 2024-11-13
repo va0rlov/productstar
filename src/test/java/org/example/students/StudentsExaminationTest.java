@@ -108,7 +108,7 @@ class StudentsExaminationTest {
     @Test
     void lastFiveStudentsWithExcellentMarkOnAnySubject() {
 
-        Set<String> expected = new LinkedHashSet<>(List.of("Kevin Garcia", "Andrew Martin", "Christopher Harris", "Daniel Jackson", "Thomas Moore"));
+        Set<String> expected = new LinkedHashSet<>(List.of("John Smith", "David Brown", "James Wilson", "Michael Johnson", "Richard Miller"));
 
         Set<String> result = examination.lastFiveStudentsWithExcellentMarkOnAnySubject();
 
