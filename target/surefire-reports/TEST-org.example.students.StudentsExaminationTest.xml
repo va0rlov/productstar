@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.students.StudentsExaminationTest" time="0.056" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\VOrlov\Code\productstar\target\test-classes;C:\Users\VOrlov\Code\productstar\target\classes;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\VOrlov\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\VOrlov\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-21.0.4.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\VOrlov\AppData\Local\Temp\surefire107005177027025357\surefirebooter-20241113135727912_3.jar C:\Users\VOrlov\AppData\Local\Temp\surefire107005177027025357 2024-11-13T13-57-27_836-jvmRun1 surefire-20241113135727912_1tmp surefire_0-20241113135727912_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\VOrlov\Code\productstar\target\test-classes;C:\Users\VOrlov\Code\productstar\target\classes;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\VOrlov\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\VOrlov\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\VOrlov\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\VOrlov"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Microsoft\jdk-21.0.4.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\VOrlov\Code\productstar"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\VOrlov\AppData\Local\Temp\surefire107005177027025357\surefirebooter-20241113135727912_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
+    <property name="user.name" value="VOrlov"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-9889606"/>
+    <property name="localRepository" value="C:\Users\VOrlov\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\VOrlov\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="C:\Users\VOrlov\Code\productstar"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Microsoft\jdk-21.0.4.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\Program Files\Microsoft\jdk-21.0.4.7-hotspot\bin;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Graphviz\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\WireGuard\;C:\Users\VOrlov\.console-ninja\.bin;C:\Users\VOrlov\scoop\shims;C:\Users\VOrlov\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\VOrlov\AppData\Local\Programs\Python\Python312\;C:\Users\VOrlov\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Midnight Commander;C:\Program Files\JetBrains\PyCharm Community Edition 2024.2.0.1\bin;C:\Users\VOrlov\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VOrlov\AppData\Roaming\npm;C:\Users\VOrlov\AppData\Roaming\Python\Scripts;C:\Program Files\PostgreSQL\16\bin\;C:\Program Files\Vim\vim91\;C:\Users\VOrlov\protoc\bin\;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.1\bin;C:\Users\VOrlov\apache-maven-3.9.9\bin\;C:\opt\fluent\bin\;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="21.0.4+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="multipleSubmissionsStudentNames" classname="org.example.students.StudentsExaminationTest" time="0.021"/>
+  <testcase name="getAllScores" classname="org.example.students.StudentsExaminationTest" time="0.008">
+    <system-out><![CDATA[[Score[name=John Smith, subject=Mathematics, score=5], Score[name=Michael Johnson, subject=Physics, score=5], Score[name=David Brown, subject=History, score=5], Score[name=James Wilson, subject=History, score=5], Score[name=Robert Taylor, subject=History, score=4], Score[name=James Wilson, subject=Physics, score=5], Score[name=Michael Johnson, subject=History, score=4], Score[name=Michael Johnson, subject=Mathematics, score=5], Score[name=William Davis, subject=Biology, score=4], Score[name=Richard Miller, subject=Physical Education, score=5], Score[name=Charles Wilson, subject=Physical Education, score=5], Score[name=Thomas Moore, subject=Chemistry, score=5], Score[name=Joseph Anderson, subject=Geography, score=4], Score[name=Daniel Jackson, subject=Art, score=5], Score[name=Matthew White, subject=Music, score=4], Score[name=Christopher Harris, subject=English, score=5], Score[name=Andrew Martin, subject=Computer Science, score=5], Score[name=Brian Thompson, subject=Economics, score=4], Score[name=Kevin Garcia, subject=Sociology, score=5], Score[name=Jason Martinez, subject=Psychology, score=4]]
+]]></system-out>
+  </testcase>
+  <testcase name="getAllItems" classname="org.example.students.StudentsExaminationTest" time="0.003">
+    <system-out><![CDATA[{NameAndSubject[name=John Smith, subject=Mathematics]=5, NameAndSubject[name=Michael Johnson, subject=Physics]=5, NameAndSubject[name=David Brown, subject=History]=5, NameAndSubject[name=James Wilson, subject=History]=5, NameAndSubject[name=Robert Taylor, subject=History]=4, NameAndSubject[name=James Wilson, subject=Physics]=5, NameAndSubject[name=Michael Johnson, subject=History]=4, NameAndSubject[name=Michael Johnson, subject=Mathematics]=5, NameAndSubject[name=William Davis, subject=Biology]=4, NameAndSubject[name=Richard Miller, subject=Physical Education]=5, NameAndSubject[name=Charles Wilson, subject=Physical Education]=5, NameAndSubject[name=Thomas Moore, subject=Chemistry]=5, NameAndSubject[name=Joseph Anderson, subject=Geography]=4, NameAndSubject[name=Daniel Jackson, subject=Art]=5, NameAndSubject[name=Matthew White, subject=Music]=4, NameAndSubject[name=Christopher Harris, subject=English]=5, NameAndSubject[name=Andrew Martin, subject=Computer Science]=5, NameAndSubject[name=Brian Thompson, subject=Economics]=4, NameAndSubject[name=Kevin Garcia, subject=Sociology]=5, NameAndSubject[name=Jason Martinez, subject=Psychology]=4}
+]]></system-out>
+  </testcase>
+  <testcase name="lastFiveStudentsWithExcellentMarkOnAnySubject" classname="org.example.students.StudentsExaminationTest" time="0.001"/>
+  <testcase name="removeItem" classname="org.example.students.StudentsExaminationTest" time="0.004"/>
+  <testcase name="callManyTimesForRepeatingRequests" classname="org.example.students.StudentsExaminationTest" time="0.001"/>
+  <testcase name="putAllItems" classname="org.example.students.StudentsExaminationTest" time="0.0"/>
+  <testcase name="getAverageForSubject" classname="org.example.students.StudentsExaminationTest" time="0.001"/>
+  <testcase name="getScoreTest" classname="org.example.students.StudentsExaminationTest" time="0.005"/>
+</testsuite>
