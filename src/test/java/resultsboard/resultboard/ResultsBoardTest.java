@@ -3,7 +3,7 @@
 package resultsboard.resultboard;
 
 import org.junit.jupiter.api.Test;
-import resultsboard.StudentScore;
+import resultsboard.studentscore.StudentScore;
 
 import java.util.List;
 

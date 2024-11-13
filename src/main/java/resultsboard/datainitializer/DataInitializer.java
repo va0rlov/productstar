@@ -1,7 +1,7 @@
 package resultsboard.datainitializer;
 
 import resultsboard.resultboard.ResultsBoard;
-import resultsboard.StudentScore;
+import resultsboard.studentscore.StudentScore;
 
 import java.util.List;
 import java.util.stream.Collectors;

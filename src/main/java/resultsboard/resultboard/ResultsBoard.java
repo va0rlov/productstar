@@ -1,6 +1,6 @@
 package resultsboard.resultboard;
 
-import resultsboard.StudentScore;
+import resultsboard.studentscore.StudentScore;
 
 import java.util.ArrayList;
 import java.util.List;
