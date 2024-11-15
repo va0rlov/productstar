@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="213015f8-de5c-4dff-8c0d-f42cd51f5397" name="Changes" comment="'final version' is working">
-      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="213015f8-de5c-4dff-8c0d-f42cd51f5397" name="Changes" comment="'settings'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,10 +33,11 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="StAPI" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -72,33 +68,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProjectStructureWriter.executor&quot;: &quot;Run&quot;,
-    &quot;Application.resultsboard.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataInitializerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DataInitializerTest.testInitializeData.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultPrinterTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultPrinterTest.testPrintResultsWithNoStudents.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultPrinterTest.testPrintResultsWithTop3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultsBoardTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StudentScoreTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StudentsExaminationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.java in students.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;StAPILO&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/VOrlov/Code/productstar&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.Main.executor": "Run",
+    "Application.ProjectStructureWriter.executor": "Run",
+    "Application.resultsboard.Main.executor": "Run",
+    "JUnit.DataInitializerTest.executor": "Run",
+    "JUnit.DataInitializerTest.testInitializeData.executor": "Run",
+    "JUnit.ResultPrinterTest.executor": "Run",
+    "JUnit.ResultPrinterTest.testPrintResultsWithNoStudents.executor": "Run",
+    "JUnit.ResultPrinterTest.testPrintResultsWithTop3.executor": "Run",
+    "JUnit.ResultsBoardTest.executor": "Run",
+    "JUnit.StudentScoreTest.executor": "Run",
+    "JUnit.StudentsExaminationTest.executor": "Run",
+    "JUnit.java in students.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/VOrlov/Code/productstar",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\VOrlov\Code\productstar" />
@@ -322,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731506606982</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="'settings'">
+      <option name="closed" value="true" />
+      <created>1731680086122</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731680086122</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -338,6 +342,7 @@
     <MESSAGE value="'StudentScore' updated" />
     <MESSAGE value="'PS' updated" />
     <MESSAGE value="'final version' is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="'final version' is working" />
+    <MESSAGE value="'settings'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'settings'" />
   </component>
 </project>
