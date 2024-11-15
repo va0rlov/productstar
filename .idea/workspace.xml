@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="213015f8-de5c-4dff-8c0d-f42cd51f5397" name="Changes" comment="'settings'" />
+    <list default="true" id="213015f8-de5c-4dff-8c0d-f42cd51f5397" name="Changes" comment="'settings'">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,7 +328,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731680086122</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="'settings'">
+      <option name="closed" value="true" />
+      <created>1731680102965</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731680102965</updated>
+    </task>
+    <task id="LOCAL-00016" summary="'settings'">
+      <option name="closed" value="true" />
+      <created>1731680144049</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731680144049</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
