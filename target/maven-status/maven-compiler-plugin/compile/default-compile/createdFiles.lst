@@ -1,7 +1,0 @@
-ProjectStructureWriter.class
-org\example\students\LRUCache.class
-org\example\students\Score.class
-org\example\students\NameAndSubject.class
-org\example\students\exceptions\ItemNotFoundException.class
-org\example\students\StudentsExamination.class
-org\example\students\Examination.class
