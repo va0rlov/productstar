@@ -1,29 +1,12 @@
-📄 .gitignore
 📄 .gitignore.ProjectStructureWriter
 📄 mvnw
 📄 mvnw.cmd
 📄 pom.xml
-📄 productstar.iml
 📄 project_structure.txt
 📄 README.md
 📁 src/
 ├── 📁 main/
 │   ├── 📁 java/
-│   │   ├── 📁 org/
-│   │   │   ├── 📁 example/
-│   │   │   │   ├── 📁 students/
-│   │   │   │   │   ├── 📄 Examination.java
-│   │   │   │   │   ├── 📁 exceptions/
-│   │   │   │   │   │   ├── 📄 ItemNotFoundException.java
-│   │   │   │   │   ├── 📄 LRUCache.java
-│   │   │   │   │   ├── 📄 NameAndSubject.java
-│   │   │   │   │   ├── 📄 Score.java
-│   │   │   │   │   ├── 📄 StudentsExamination.java
+│   │   ├── 📁 com/
+│   │   │   ├── 📁 project/
 │   │   ├── 📄 ProjectStructureWriter.java
-│   ├── 📁 resources/
-├── 📁 test/
-│   ├── 📁 java/
-│   │   ├── 📁 org/
-│   │   │   ├── 📁 example/
-│   │   │   │   ├── 📁 students/
-│   │   │   │   │   ├── 📄 StudentsExaminationTest.java
