@@ -1,7 +1,7 @@
 package com.collections.students;
 
 public class Command {
-    private Action action;
+    private final Action action;
     private String data;
 
     public Command(Action action, String data) {
@@ -13,14 +13,20 @@ public class Command {
         this.action = action;
     }
 
+
+    /**
+     * Возвращает тип действия, которое хранится в этом объекте
+     * @return тип действия
+     */
     public Action getAction() {
         return action;
     }
 
+    /**
+     * Возвращает строку, которая хранится в этом объекте
+     * @return строка, хранящаяся в этом объекте
+     */
     public String getData() {
-        if (data == null) {
-            return "-";
-        }
-        return data;
+        return data != null ? data : "";
     }
 }
