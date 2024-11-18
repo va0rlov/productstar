@@ -3,10 +3,6 @@ package com.collections.students;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-/**
- * представляет собой вариант, выбранный пользователем
- */
-
 public enum Action {
     EXIT(0, false),
     CREATE(1,true),
@@ -16,8 +12,8 @@ public enum Action {
     STATS_BY_CITY(5, false),
     SEARCH(6, true),
     ERROR(-1, false);
-    private Integer code;
-    private boolean requireAdditionalData;
+    private final Integer code;
+    private final boolean requireAdditionalData;
 
     Action(Integer code, boolean requireAdditionalData) {
         this.code = code;
