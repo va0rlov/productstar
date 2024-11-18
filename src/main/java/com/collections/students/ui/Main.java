@@ -1,4 +1,10 @@
-package com.collections.students;
+package com.collections.students.ui;
+
+import com.collections.students.commands.Command;
+import com.collections.students.commands.StudentCommandHandler;
+import com.collections.students.enums.Action;
+import com.collections.students.model.Student;
+import com.collections.students.storage.StudentStorage;
 
 import java.util.Scanner;
 

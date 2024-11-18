@@ -1,4 +1,4 @@
-package com.collections.students;
+package com.collections.students.storage;
 
 import java.util.Collection;
 import java.util.HashSet;

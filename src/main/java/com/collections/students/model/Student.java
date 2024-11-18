@@ -1,4 +1,4 @@
-package com.collections.students;
+package com.collections.students.model;
 
 public class Student {
     private String surname;

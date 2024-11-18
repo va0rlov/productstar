@@ -1,4 +1,8 @@
-package com.collections.students;
+package com.collections.students.commands;
+
+import com.collections.students.model.Student;
+import com.collections.students.enums.Action;
+import com.collections.students.storage.StudentStorage;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package com.collections.students;
+package com.collections.students.enums;
 
 import java.util.Objects;
 import java.util.stream.Stream;

@@ -1,4 +1,4 @@
-package com.collections.students;
+package com.collections.students.utils;
 
 public class Utils {
 

@@ -1,4 +1,6 @@
-package com.collections.students;
+package com.collections.students.storage;
+
+import com.collections.students.model.Student;
 
 import java.util.*;
 import java.util.stream.Collectors;

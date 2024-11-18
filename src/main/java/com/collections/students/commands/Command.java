@@ -1,4 +1,6 @@
-package com.collections.students;
+package com.collections.students.commands;
+
+import com.collections.students.enums.Action;
 
 public class Command {
     private final Action action;

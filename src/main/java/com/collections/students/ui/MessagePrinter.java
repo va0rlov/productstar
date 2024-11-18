@@ -1,4 +1,4 @@
-package com.collections.students;
+package com.collections.students.ui;
 
 public class MessagePrinter {
 
