@@ -35,7 +35,7 @@ public class Main {
             Action action = Action.fromCode(actionCode);
             if (action.isRequireAdditionalData()) {
                 String data = scanner.nextLine().trim();
-                if (data.isEmpty()) {
+                if (data.isEmpty() && action != Action.SEARCH) {
                     System.out.println("Данные не могут быть пустыми. Повторите ввод.");
                     return new Command(Action.ERROR);
                 }

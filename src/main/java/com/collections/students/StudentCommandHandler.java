@@ -19,21 +19,24 @@ public class StudentCommandHandler {
             default -> System.out.println("Действие " + action + " не поддерживается");
         }
     }
-
     private void processCreateCommand(Command command) {
         String data = command.getData();
         String[] dataArray = data.split(",");
+        if (dataArray.length != 5) {
+            System.out.println("Некорректный формат данных. Повторите ввод.");
+            return;
+        }
 
         Student student = new Student();
-        student.setSurname(dataArray[0]);
-        student.setName(dataArray[1]);
-        student.setCourse(dataArray[2]);
-        student.setCity(dataArray[3]);
+        student.setSurname(dataArray[0].trim());
+        student.setName(dataArray[1].trim());
+        student.setCourse(dataArray[2].trim());
+        student.setCity(dataArray[3].trim());
 
         try {
-            student.setAge(Integer.valueOf(dataArray[4]));
-        } catch (Exception e) {
-            System.out.println("Проблемы обработки введенных данных - возраст, д.б. целым числом, повторите ввод");
+            student.setAge(Integer.valueOf(dataArray[4].trim()));
+        } catch (NumberFormatException e) {
+            System.out.println("Некорректный возраст. Повторите ввод.");
             return;
         }
 
@@ -44,29 +47,37 @@ public class StudentCommandHandler {
     private void processUpdateCommand(Command command) {
         String data = command.getData();
         String[] dataArray = data.split(",");
-        if (dataArray.length < 6) {
-            System.out.printf("Недостаточно сведений для обновления данных: " + dataArray.length + " из " + "6 ");
+        if (dataArray.length != 6) {
+            System.out.println("Некорректный формат данных. Повторите ввод.");
             return;
         }
-        if (Utils.isNumeric(dataArray[0])) {
-            System.out.println("Проблемы обработки введенных данных - идентификатор, д.б. целым числом, повторите ввод");
+
+        Long id;
+        try {
+            id = Long.valueOf(dataArray[0].trim());
+        } catch (NumberFormatException e) {
+            System.out.println("Некорректный идентификатор. Повторите ввод.");
             return;
         }
-        Long id = Long.valueOf(dataArray[0]);
-        if (isContainsKey(id)) {
+
+        if (!studentStorage.getAll().containsKey(id)) {
+            System.out.println("Студент с данным идентификатором отсутствует. Повторите ввод.");
+            StudentStorage.printAll();
             return;
         }
 
         Student student = new Student();
-        student.setSurname(dataArray[1]);
-        student.setName(dataArray[2]);
-        student.setCourse(dataArray[3]);
-        student.setCity(dataArray[4]);
-        if (Utils.isNumeric(dataArray[5])) {
-            System.out.println("Проблемы обработки введенных данных - возраст, д.б. целым числом, повторите ввод");
+        student.setSurname(dataArray[1].trim());
+        student.setName(dataArray[2].trim());
+        student.setCourse(dataArray[3].trim());
+        student.setCity(dataArray[4].trim());
+
+        try {
+            student.setAge(Integer.valueOf(dataArray[5].trim()));
+        } catch (NumberFormatException e) {
+            System.out.println("Некорректный возраст. Повторите ввод.");
             return;
         }
-        student.setAge(Integer.valueOf(dataArray[5]));
 
         studentStorage.updateStudent(id, student);
         StudentStorage.printAll();
@@ -74,12 +85,17 @@ public class StudentCommandHandler {
 
     private void processDeleteCommand(Command command) {
         String data = command.getData();
-        if (Utils.isNumeric(data)) {
-            System.out.println("Проблемы обработки введенных данных - идентификатор, д.б. целым числом, повторите ввод");
+        Long id;
+        try {
+            id = Long.valueOf(data.trim());
+        } catch (NumberFormatException e) {
+            System.out.println("Некорректный идентификатор. Повторите ввод.");
             return;
         }
-        Long id = Long.valueOf(data);
-        if (isContainsKey(id)) {
+
+        if (!studentStorage.getAll().containsKey(id)) {
+            System.out.println("Студент с данным идентификатором отсутствует. Повторите ввод.");
+            StudentStorage.printAll();
             return;
         }
 

@@ -32,7 +32,12 @@ public class StudentStorage {
     }
 
     public void search(String surname) {
-        List<String> data = Arrays.stream(surname.split(",")).sorted().toList();
+        if (surname == null || surname.trim().isEmpty()) {
+            searchAllStudents();
+            return;
+        }
+
+        List<String> data = Arrays.stream(surname.split(",")).map(String::trim).sorted().toList();
         int dataLength = data.size();
 
         try {
@@ -84,13 +89,11 @@ public class StudentStorage {
     }
 
     public Map<String, Long> getCountByCourse() {
-        return studentStorageMap.values().stream().collect(Collectors.toMap(Student::getCourse, student -> 1L, Long::sum
-                ));
+        return studentStorageMap.values().stream().collect(Collectors.toMap(Student::getCourse, student -> 1L, Long::sum));
     }
 
     public Map<String, Long> getCountByCity() {
-        return studentStorageMap.values().stream().collect(Collectors.toMap(Student::getCity, student -> 1L, Long::sum
-                ));
+        return studentStorageMap.values().stream().collect(Collectors.toMap(Student::getCity, student -> 1L, Long::sum));
     }
 
     public Map<Long, Student> getAll() {
