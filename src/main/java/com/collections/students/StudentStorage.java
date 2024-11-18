@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class StudentStorage {
-    private final Map<Long, Student> studentStorageMap = new HashMap<>();
+    private static final Map<Long, Student> studentStorageMap = new HashMap<>();
     private final StudentSurnameStorage studentSurnameStorage = new StudentSurnameStorage();
     private Long currentId = 0L;
 
@@ -67,7 +67,7 @@ public class StudentStorage {
         return currentId;
     }
 
-    public void printAll() {
+    public static void printAll() {
         System.out.println(studentStorageMap);
     }
 

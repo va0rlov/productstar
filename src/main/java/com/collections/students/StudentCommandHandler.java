@@ -38,7 +38,7 @@ public class StudentCommandHandler {
         }
 
         studentStorage.createStudent(student);
-        studentStorage.printAll();
+        StudentStorage.printAll();
     }
 
     private void processUpdateCommand(Command command) {
@@ -69,7 +69,7 @@ public class StudentCommandHandler {
         student.setAge(Integer.valueOf(dataArray[5]));
 
         studentStorage.updateStudent(id, student);
-        studentStorage.printAll();
+        StudentStorage.printAll();
     }
 
     private void processDeleteCommand(Command command) {
@@ -84,7 +84,7 @@ public class StudentCommandHandler {
         }
 
         studentStorage.deleteStudent(id);
-        studentStorage.printAll();
+        StudentStorage.printAll();
     }
 
     private void processSearchCommand(Command command) {
@@ -106,7 +106,7 @@ public class StudentCommandHandler {
         boolean res = studentStorage.getAll().containsKey(id);
         if (!res) {
             System.out.println("Студент с данным идентификатором отсутствует, повторите ввод");
-            studentStorage.printAll();
+            StudentStorage.printAll();
         }
         return !res;
     }

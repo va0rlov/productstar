@@ -7,7 +7,7 @@ import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 public class StudentSurnameStorage {
-    private final TreeMap<String, Set<Long>> surnamesTreeMap = new TreeMap<>();
+    private static final TreeMap<String, Set<Long>> surnamesTreeMap = new TreeMap<>();
 
     public void studentCreated(Long id, String surname) {
         Set<Long> existingIds = surnamesTreeMap.getOrDefault(surname, new HashSet<>());
@@ -40,5 +40,12 @@ public class StudentSurnameStorage {
     public Set<Long> getStudentBySurnamesBetween(String surnameFrom, String surnameTo) {
         return surnamesTreeMap.subMap(surnameFrom, true, surnameTo, true).values().stream().flatMap(Collection::stream)
                 .collect(Collectors.toSet());
+    }
+
+    public static void printAll() {
+        surnamesTreeMap.forEach((surname, ids) -> {
+            System.out.println("Фамилия: " + surname);
+            ids.forEach(id -> System.out.println("  ID: " + id));
+        });
     }
 }
