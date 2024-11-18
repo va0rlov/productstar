@@ -8,6 +8,10 @@ public class StudentStorage {
     private final StudentSurnameStorage studentSurnameStorage = new StudentSurnameStorage();
     private Long currentId = 0L;
 
+    public static void printAll() {
+        System.out.println(studentStorageMap);
+    }
+
     public void createStudent(Student student) {
         Long nextId = getNextId();
         studentStorageMap.put(nextId, student);
@@ -70,10 +74,6 @@ public class StudentStorage {
     public Long getNextId() {
         currentId = currentId + 1;
         return currentId;
-    }
-
-    public static void printAll() {
-        System.out.println(studentStorageMap);
     }
 
     public void printMap(Map<String, Long> data) {

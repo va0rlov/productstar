@@ -16,6 +16,7 @@ public class Command {
 
     /**
      * Возвращает тип действия, которое хранится в этом объекте
+     *
      * @return тип действия
      */
     public Action getAction() {
@@ -24,6 +25,7 @@ public class Command {
 
     /**
      * Возвращает строку, которая хранится в этом объекте
+     *
      * @return строка, хранящаяся в этом объекте
      */
     public String getData() {

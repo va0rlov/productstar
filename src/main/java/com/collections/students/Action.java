@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 public enum Action {
     EXIT(0, false),
-    CREATE(1,true),
+    CREATE(1, true),
     UPDATE(2, true),
     DELETE(3, true),
     STATS_BY_COURSE(4, false),
@@ -20,14 +20,6 @@ public enum Action {
         this.requireAdditionalData = requireAdditionalData;
     }
 
-    public Integer getCode() {
-        return code;
-    }
-
-    public boolean isRequireAdditionalData() {
-        return requireAdditionalData;
-    }
-
     public static Action fromCode(Integer code) {
         return Stream.of(Action.values())
                 .filter(action -> Objects.equals(action.getCode(), code))
@@ -36,5 +28,13 @@ public enum Action {
                     System.out.println("Неизвестный код действия " + code);
                     return Action.ERROR;
                 });
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public boolean isRequireAdditionalData() {
+        return requireAdditionalData;
     }
 }

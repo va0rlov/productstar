@@ -19,6 +19,7 @@ public class StudentCommandHandler {
             default -> System.out.println("Действие " + action + " не поддерживается");
         }
     }
+
     private void processCreateCommand(Command command) {
         String data = command.getData();
         String[] dataArray = data.split(",");
