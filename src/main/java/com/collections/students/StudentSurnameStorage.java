@@ -1,12 +1,13 @@
 package com.collections.students;
 
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 public class StudentSurnameStorage {
-    private TreeMap<String, Set<Long>> surnamesTreeMap = new TreeMap<>();
+    private final TreeMap<String, Set<Long>> surnamesTreeMap = new TreeMap<>();
 
     public void studentCreated(Long id, String surname) {
         Set<Long> existingIds = surnamesTreeMap.getOrDefault(surname, new HashSet<>());
@@ -24,35 +25,20 @@ public class StudentSurnameStorage {
     }
 
     public Set<Long> getStudentIdsBySurname(String surname) {
-        Set<Long> res = surnamesTreeMap.get(surname);
-        return res;
+        return surnamesTreeMap.get(surname);
     }
 
     public TreeMap<String, Set<Long>> getSurnamesTreeMap() {
         return new TreeMap<>(surnamesTreeMap);
     }
 
-    /**
-     * Данный метод возвращает уникальные идентификаторы студентов,
-     * чьи фамилии меньше или равны переданной.
-     * @return
-     */
-
     public Set<Long> getStudentBySurnamesLessOrEqualsThan(String surname) {
-        Set<Long> res = surnamesTreeMap.headMap(surname, true)
-                .values()
-                .stream()
-                .flatMap(longs -> longs.stream())
+        return surnamesTreeMap.headMap(surname, true).values().stream().flatMap(Collection::stream)
                 .collect(Collectors.toSet());
-        return res;
     }
 
     public Set<Long> getStudentBySurnamesBetween(String surnameFrom, String surnameTo) {
-        Set<Long> res = surnamesTreeMap.subMap(surnameFrom, true, surnameTo, true)
-                .values()
-                .stream()
-                .flatMap(longs -> longs.stream())
+        return surnamesTreeMap.subMap(surnameFrom, true, surnameTo, true).values().stream().flatMap(Collection::stream)
                 .collect(Collectors.toSet());
-        return res;
     }
 }
