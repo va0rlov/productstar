@@ -36,7 +36,7 @@
 10) Работа с памятью JVM
 
 БЛОК 5 – JAVA CORE: РАБОТА С СЕТЬЮ, МНОГОПОТОЧНОСТЬ, РЕФЛЕКСИЯ
-1.	Работа с файлами. Адаптер и декоратор
+1.	Работа с файлами. Адаптер и декоратор https://github.com/va0rlov/productstar/tree/Files
 2.	Воркшоп: работа с файлами
 3.	Сериализация
 4.	Работа с сетью. OSI, TCP/IP, UDP, HTTP
@@ -56,7 +56,7 @@
 3.	Spring Application Context – от XML до Groovy
 4.	Spring Web. REST-архитектура и контроллеры
 5.	Servlets
-6.	Архитектура Веб Сервиса, MVC, Spting Boot
+6.	Архитектура Веб Сервиса, MVC, Spring Boot
 7.	Основы HTML. Язык разметки страницы
 8.	CRUD приложение. Create, Read, Update, Delete application
 
