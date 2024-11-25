@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.logging.Logger;
 
 public class HighlightSubstring {
 
@@ -24,7 +25,7 @@ public class HighlightSubstring {
                 System.out.println(highlightedLine);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.getLogger(HighlightSubstring.class.getName()).log(java.util.logging.Level.SEVERE, null, e);
         }
     }
 }
