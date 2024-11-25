@@ -37,7 +37,7 @@
 
 БЛОК 5 – JAVA CORE: РАБОТА С СЕТЬЮ, МНОГОПОТОЧНОСТЬ, РЕФЛЕКСИЯ
 1.	Работа с файлами. Адаптер и декоратор https://github.com/va0rlov/productstar/tree/Files
-2.	Воркшоп: работа с файлами
+2.	Воркшоп: работа с файлами https://github.com/va0rlov/productstar/tree/HighlightSubstring
 3.	Сериализация
 4.	Работа с сетью. OSI, TCP/IP, UDP, HTTP
 5.	Воркшоп: работа с сетью и API
