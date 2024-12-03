@@ -38,12 +38,12 @@
 БЛОК 5 – JAVA CORE: РАБОТА С СЕТЬЮ, МНОГОПОТОЧНОСТЬ, РЕФЛЕКСИЯ
 1.	Работа с файлами. Адаптер и декоратор https://github.com/va0rlov/productstar/tree/Files
 2.	Воркшоп: работа с файлами https://github.com/va0rlov/productstar/tree/HighlightSubstring
-3.	Сериализация
+3.	Сериализация https://github.com/productstar-team/javaTwo/tree/master/src/lesson22
 4.	Работа с сетью. OSI, TCP/IP, UDP, HTTP
-5.	Воркшоп: работа с сетью и API
-6.	Java библиотека NIO. Отличия IO и NIO
-7.	Многопоточное программирование в Java
-8.	Рефлексия в Java. Создание аннотаций
+5.	Воркшоп: работа с сетью и API https://github.com/va0rlov/productstar/tree/StockAnalyzer
+6.	Java библиотека NIO. Отличия IO и NIO https://github.com/va0rlov/productstar/tree/NIO
+7.	Многопоточное программирование в Java https://github.com/productstar-team/javaTwo/tree/master/src/lesson26/dz_solution
+8.	Рефлексия в Java. Создание аннотаций https://github.com/productstar-team/javaTwo/blob/master/src/lesson27/annotation/dz/DZ_Solution.java
 
 БЛОК 6 – ИНСТРУМЕНТЫ СБОРКИ: GIT, GITHUB
 1.	Системы контроля версий
