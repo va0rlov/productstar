@@ -39,7 +39,7 @@ public class ResultParser {
         var timeParts = time.split(":");
 
         // Минуты умножаем на 60 и добавляем секунды
-        var totalSecond = Integer.valueOf(timeParts[0]) * 60 + Integer.valueOf(timeParts[1]);
+        var totalSecond = Integer.parseInt(timeParts[0]) * 60 + Integer.parseInt(timeParts[1]);
         return Duration.ofSeconds(totalSecond);
     }
 }
