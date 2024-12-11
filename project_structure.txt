@@ -1,3 +1,4 @@
+📄 .gitignore
 📄 .gitignore.ProjectStructureWriter
 📄 mvnw
 📄 mvnw.cmd
@@ -7,6 +8,22 @@
 📁 src/
 ├── 📁 main/
 │   ├── 📁 java/
-│   │   ├── 📁 com/
-│   │   │   ├── 📁 project/
+│   │   ├── 📁 org/
+│   │   │   ├── 📁 example/
+│   │   │   │   ├── 📁 config/
+│   │   │   │   │   ├── 📄 ResultsProcessorConfig.java
+│   │   │   │   ├── 📁 model/
+│   │   │   │   │   ├── 📄 Distance.java
+│   │   │   │   │   ├── 📄 Gender.java
+│   │   │   │   │   ├── 📄 Person.java
+│   │   │   │   │   ├── 📄 Result.java
+│   │   │   │   │   ├── 📄 Result.java~
+│   │   │   │   ├── 📄 ResultsProcessorMain.java
+│   │   │   │   ├── 📁 service/
+│   │   │   │   │   ├── 📄 ResultParser.java
+│   │   │   │   │   ├── 📄 ResultParser.java~
+│   │   │   │   │   ├── 📄 ResultsProcessor.java
+│   │   │   │   │   ├── 📄 ResultsReader.java
 │   │   ├── 📄 ProjectStructureWriter.java
+│   ├── 📁 resources/
+│   │   ├── 📄 results.csv
