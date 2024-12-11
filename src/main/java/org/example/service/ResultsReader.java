@@ -28,10 +28,9 @@ public class ResultsReader {
      */
     public List<Result> readFromFile(Path filePath) {
         try {
-            final var collect = Files.lines(filePath)
+            return Files.lines(filePath)
                     .map(resultParser::parseResult)
                     .collect(Collectors.toList());
-            return collect;
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
