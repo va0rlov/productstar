@@ -32,7 +32,6 @@ public class ResultsProcessorMain {
         // Женщины на 5 км
         List<Result> fastestWomen5Km = resultsProcessor.getFastest(Gender.FEMALE, Distance.FIVE_KM, 3);
 
-        // Красивый вывод в консоль
         printResults("Fastest Men on 10 km Distance", fastestMen10Km);
         printResults("Fastest Men on 5 km Distance", fastestMen5Km);
         printResults("Fastest Women on 10 km Distance", fastestWomen10Km);

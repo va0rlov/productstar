@@ -34,12 +34,18 @@ public class ResultParser {
      * Распарсить строку MM:SS в {@link Duration}.
      * <p>
      * Предполагаем, что все спортсмены уложились в один час в целях упрощения парсинга.
+     * <p>
+     * MM - минуты
+     * SS - секунды
      */
     private Duration parseTime(String time) {
+        // Разбиваем строку на части
         var timeParts = time.split(":");
 
-        // Минуты умножаем на 60 и добавляем секунды
+        // Минуты умножаем на 60 (количество секунд в минуте) и добавляем секунды
         var totalSecond = Integer.parseInt(timeParts[0]) * 60 + Integer.parseInt(timeParts[1]);
+
+        // Возвращаем Duration, соответствующий количеству секунд
         return Duration.ofSeconds(totalSecond);
     }
 }

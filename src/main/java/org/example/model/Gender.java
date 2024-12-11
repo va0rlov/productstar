@@ -17,6 +17,10 @@ public enum Gender {
      * Определить пол по коду из протокола.
      * <p>
      * M -> MALE, F -> FEMALE.
+     *
+     * @param code код пола из протокола
+     * @return пол, соответствующий коду
+     * @throws IllegalArgumentException если код пола не поддерживается
      */
     public static Gender of(String code) {
         return Stream.of(values())
