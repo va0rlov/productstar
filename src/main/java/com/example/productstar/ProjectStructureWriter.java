@@ -1,4 +1,4 @@
-// src/main/java/ProjectStructureWriter.java
+package com.example.productstar;// src/main/java/org.example.productstar.ProjectStructureWriter.java
 
 import java.io.File;
 import java.io.FileWriter;

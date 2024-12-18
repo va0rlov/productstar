@@ -1,3 +1,4 @@
+📄 .gitignore
 📄 .gitignore.ProjectStructureWriter
 📄 mvnw
 📄 mvnw.cmd
@@ -8,5 +9,12 @@
 ├── 📁 main/
 │   ├── 📁 java/
 │   │   ├── 📁 com/
-│   │   │   ├── 📁 project/
-│   │   ├── 📄 ProjectStructureWriter.java
+│   │   │   ├── 📁 example/
+│   │   │   │   ├── 📁 config/
+│   │   │   │   │   ├── 📄 AppConfig.java
+│   │   │   │   ├── 📁 productstar/
+│   │   │   │   │   ├── 📄 ProjectStructureWriter.java
+│   │   │   │   ├── 📁 service/
+│   │   │   │   │   ├── 📄 ResultsProcessor.java
+│   │   │   │   ├── 📁 util/
+│   │   │   │   │   ├── 📄 FileParser.java
