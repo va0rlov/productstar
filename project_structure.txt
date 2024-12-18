@@ -21,9 +21,15 @@
 │   │   │   │   ├── 📄 ResultsProcessorMain.java
 │   │   │   │   ├── 📁 service/
 │   │   │   │   │   ├── 📄 ResultParser.java
-│   │   │   │   │   ├── 📄 ResultParser.java~
 │   │   │   │   │   ├── 📄 ResultsProcessor.java
 │   │   │   │   │   ├── 📄 ResultsReader.java
 │   │   ├── 📄 ProjectStructureWriter.java
+│   ├── 📁 resources/
+│   │   ├── 📄 results200.csv
+├── 📁 test/
+│   ├── 📁 java/
+│   │   ├── 📄 ResultParserTest.java
+│   │   ├── 📄 ResultsProcessorTest.java
+│   │   ├── 📄 ResultsReaderTest.java
 │   ├── 📁 resources/
 │   │   ├── 📄 results200.csv

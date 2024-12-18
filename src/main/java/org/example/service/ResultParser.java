@@ -38,7 +38,7 @@ public class ResultParser {
      * MM - минуты
      * SS - секунды
      */
-    private Duration parseTime(String time) {
+    public Duration parseTime(String time) {
         // Разбиваем строку на части
         var timeParts = time.split(":");
 
