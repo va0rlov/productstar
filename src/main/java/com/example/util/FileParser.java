@@ -1,5 +1,8 @@
 package com.example.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,6 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FileParser {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileParser.class);
 
     private static final String VALID_ANSWERS = "АБВ"; // Допустимые ответы
 
@@ -29,7 +34,7 @@ public class FileParser {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error("Error parsing file", e);
         }
         return result;
     }
