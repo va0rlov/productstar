@@ -14,19 +14,24 @@ public class ResultsProcessor {
     private final Collection<Result> results;
 
     public ResultsProcessor(Collection<Result> results) {
+        // Проверка на пустую коллекцию
+        if (results == null || results.isEmpty()) {
+            throw new IllegalArgumentException("Results collection cannot be null or empty");
+        }
         this.results = results;
     }
 
     /**
-     * Получить список самых быстрых результатов для заданного пола и дистанции.
-     *
-     * @param gender пол участников.
-     * @param distance дистанция участия.
-     * @param limit количество результатов для возврата.
-     * @return список самых быстрых результатов.
+     * Позволяет определить N самых быстрых мужчин или женщин на дистанции 5 или 10 км.
+     * </p>
+     * Пример запроса - найти 3 самых быстрых женщин на дистанции 10 км.
      */
     public List<Result> getFastest(Gender gender, Distance distance, int limit) {
-        // Фильтруем результаты по дистанции и полу
+        // Проверка на корректное значение limit
+        if (limit <= 0) {
+            throw new IllegalArgumentException("Limit must be greater than zero");
+        }
+
         return results.stream()
                 .filter(result -> result.hasDistance(distance) && result.hasGender(gender))
                 .sorted(Comparator.comparing(Result::time))
