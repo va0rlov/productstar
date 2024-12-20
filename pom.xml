@@ -1,27 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.4.1</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>ru.productstar.spring</groupId>
+	<artifactId>personalFinance</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>personalFinance</name>
+	<description>Servlets</description>
+<!--	<url/>-->
+<!--	<licenses>-->
+<!--		<license/>-->
+<!--	</licenses>-->
+<!--	<developers>-->
+<!--		<developer/>-->
+<!--	</developers>-->
+<!--	<scm>-->
+<!--		<connection/>-->
+<!--		<developerConnection/>-->
+<!--		<tag/>-->
+<!--		<url/>-->
+<!--	</scm>-->
+	<properties>
+<!--		-->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<!--		-->
+		<java.version>21</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
 
-    <groupId>org.example</groupId>
-    <artifactId>productstar</artifactId>
-    <version>1.0-SNAPSHOT</version>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+<!--		-->
+		<dependency>
+			<groupId>jakarta.servlet</groupId>
+			<artifactId>jakarta.servlet-api</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+<!--		-->
+	</dependencies>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+<!--			-->
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>11.0.16</version>
+				<configuration>
+					<httpConnector>
+						<port>9000</port>
+					</httpConnector>
+					<supportedPackagings>jar</supportedPackagings>
+					<webApp>
+						<descriptor>/src/main/webapp/WEB-INF/web.xml</descriptor>
+					</webApp>
+				</configuration>
+			</plugin>
+<!--			-->
+		</plugins>
+	</build>
 
 </project>
